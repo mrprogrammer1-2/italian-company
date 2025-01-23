@@ -884,6 +884,9 @@ main {
         margin-inline: auto;
         text-align: center;
     }
+    ul {
+        list-style: none;
+    }
 }
 .contact-hero-container li:nth-child(1) {
     direction: ltr;
