@@ -52,7 +52,7 @@ a {
 }
 
 .container {
-    margin-inline: 1.5rem;
+    padding-inline: 1.5rem;
 }
 
 @media (min-width: 64em) {
@@ -227,10 +227,6 @@ main {
     padding-top: 4rem;
 }
 
-.hero-intro h1 {
-    font-size: 2rem;
-}
-
 .hero-image {
     position: relative;
     img {
@@ -264,6 +260,36 @@ main {
         right: -0.75rem;
     }
 }
+
+@media (max-width: 370px) {
+    .hero-intro h1 {
+        font-size: 1rem;
+    }
+    .hero-image .cards .card {
+        font-size: .75rem;
+        &:nth-child(1) {
+            top: 5.37rem;
+            left: -1rem;
+        }
+        &:nth-child(2) {
+            top: 12.37rem;
+            left: -0.75rem;
+        }
+        &:nth-child(3) {
+            top: 5.37rem;
+            right: -0.75rem;
+        }
+        &:nth-child(4) {
+            top: 13.37rem;
+            right: 0.25rem;
+        }
+    }
+    .hero-image img {
+        width: 20rem;
+    }
+}
+
+
 @media (min-width: 64em) {
     .hero-image .cards .card {
         font-size: 1.2rem;
@@ -301,17 +327,13 @@ main {
     width: 100%;
 }
 .hero-intro h1 {
-    font-family: --reem-font;
-    font-size: 4rem;
+    font-family: var(--reem-font);
+    font-size: 2rem;
+    white-space: nowrap;
     position: absolute;
     width: 100%;
     top: 12px;
     color: var(--white-off);
-}
-
-
-.hero-intro p {
-    font-size: 2rem;
 }
 
 .hero .cta {
