@@ -885,6 +885,9 @@ main {
         text-align: center;
     }
 }
+.contact-hero-container li:nth-child(1) {
+    direction: ltr;
+}
 
 .contact-about {
     margin-top: 135vh;
